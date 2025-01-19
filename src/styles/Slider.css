@@ -1,0 +1,51 @@
+.slider-item {
+  padding: 0 4px; /* Memberikan jarak horizontal antar item */
+}
+
+.slick-slide {
+  display: flex; /* Memastikan konten di tengah */
+  justify-content: center;
+}
+
+.slick-prev, .slick-next {
+  width: 50px; /* Lebar tombol */
+  height: 50px; /* Tinggi tombol */
+  z-index: 10; /* Pastikan tombol berada di atas elemen lain */
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 30px; /* Ukuran ikon panah */
+  color: black; /* Warna ikon panah */
+}
+
+.slick-prev {
+  left: -60px; /* Jarak tombol dari sisi kiri */
+}
+
+.slick-next {
+  right: -60px; /* Jarak tombol dari sisi kanan */
+}
+
+.custom-next-arrow, .custom-prev-arrow {
+  width: 50px; /* Lebar tombol */
+  height: 50px; /* Tinggi tombol */
+  background-color: white; /* Warna tombol */
+  border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.custom-next-arrow:hover, .custom-prev-arrow:hover {
+  background-color: #f0f0f0; /* Warna tombol saat hover */
+}
+
+.custom-prev-arrow {
+  left: -70px;
+}
+
+.custom-next-arrow {
+  right: -70px;
+}
