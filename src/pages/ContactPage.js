@@ -4,15 +4,15 @@ import emailIcon from "../assets/images/email.png";
 
 function ContactPage() {
   return (
-    <section className="text-center py-10 bg-gray-100">
+    <section className="text-center py-10 px-4 sm:px-6 lg:px-16">
       <h1 className="text-4xl font-bold">Contact Me</h1>
       <p className="text-gray-600 mt-4">
         Feel free to reach out via email or phone.
       </p>
 
-      <div className="flex justify-center mt-8 space-x-8">
+      <div className="flex flex-col sm:flex-row justify-center mt-8 space-y-8 sm:space-y-0 sm:space-x-8">
         {/* Phone Contact */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center justify-center sm:justify-start space-x-4">
           <img src={phoneIcon} alt="Phone Icon" className="w-10 h-10" />
           <div>
             <h2 className="text-xl font-semibold">Phone</h2>
@@ -26,7 +26,7 @@ function ContactPage() {
         </div>
 
         {/* Email Contact */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center justify-center sm:justify-start space-x-4">
           <img src={emailIcon} alt="Email Icon" className="w-10 h-10" />
           <div>
             <h2 className="text-xl font-semibold">Email</h2>

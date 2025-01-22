@@ -1,36 +1,42 @@
+/* Jarak horizontal antar item slider */
 .slider-item {
   padding: 0 4px; /* Memberikan jarak horizontal antar item */
 }
 
+/* Memastikan konten di tengah */
 .slick-slide {
-  display: flex; /* Memastikan konten di tengah */
+  display: flex;
   justify-content: center;
 }
 
+/* Tombol navigasi */
 .slick-prev, .slick-next {
-  width: 50px; /* Lebar tombol */
-  height: 50px; /* Tinggi tombol */
+  width: 80px; /* Lebar tombol */
+  height: 80px; /* Tinggi tombol */
   z-index: 10; /* Pastikan tombol berada di atas elemen lain */
 }
 
+/* Ukuran dan warna ikon panah */
 .slick-prev:before, .slick-next:before {
-  font-size: 30px; /* Ukuran ikon panah */
+  font-size: 50px; /* Ukuran ikon panah */
   color: black; /* Warna ikon panah */
 }
 
+/* Posisi tombol navigasi */
 .slick-prev {
-  left: -60px; /* Jarak tombol dari sisi kiri */
+  left: -90px; /* Jarak tombol dari sisi kiri */
 }
 
 .slick-next {
-  right: -60px; /* Jarak tombol dari sisi kanan */
+  right: -90px; /* Jarak tombol dari sisi kanan */
 }
 
+/* Tombol navigasi kustom */
 .custom-next-arrow, .custom-prev-arrow {
-  width: 50px; /* Lebar tombol */
-  height: 50px; /* Tinggi tombol */
-  background-color: white; /* Warna tombol */
-  border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,14 +44,100 @@
   cursor: pointer;
 }
 
+/* Tombol navigasi saat hover */
 .custom-next-arrow:hover, .custom-prev-arrow:hover {
-  background-color: #f0f0f0; /* Warna tombol saat hover */
+  background-color: #f0f0f0;
 }
 
+/* Posisi tombol navigasi kustom */
 .custom-prev-arrow {
-  left: -70px;
+  left: -100px;
 }
 
 .custom-next-arrow {
-  right: -70px;
+  right: -100px;
+}
+
+/* Responsif untuk layar lebih kecil dari 1024px */
+@media (max-width: 1024px) {
+  .slick-prev, .slick-next, .custom-next-arrow, .custom-prev-arrow {
+    width: 60px; /* Lebar tombol lebih kecil */
+    height: 60px; /* Tinggi tombol lebih kecil */
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 40px; /* Ukuran ikon panah lebih kecil */
+  }
+
+  .slick-prev {
+    left: -60px; /* Tombol lebih dekat ke sisi kiri */
+  }
+
+  .slick-next {
+    right: -60px; /* Tombol lebih dekat ke sisi kanan */
+  }
+
+  .custom-prev-arrow {
+    left: -70px; /* Tombol lebih dekat ke sisi kiri */
+  }
+
+  .custom-next-arrow {
+    right: -70px; /* Tombol lebih dekat ke sisi kanan */
+  }
+
+  /* Item slider mengecil pada layar lebih kecil */
+  .slick-slide .slider-item {
+    transform: scale(0.9); /* Mengecilkan item slider */
+  }
+
+  .slick-slide img {
+    width: 80px; /* Ukuran gambar lebih kecil */
+    height: 80px; /* Ukuran gambar lebih kecil */
+  }
+
+  .slick-slide p {
+    font-size: 12px; /* Ukuran teks lebih kecil */
+  }
+}
+
+/* Responsif untuk layar lebih kecil dari 600px */
+@media (max-width: 600px) {
+  .slick-prev, .slick-next, .custom-next-arrow, .custom-prev-arrow {
+    width: 50px; /* Lebar tombol lebih kecil */
+    height: 50px; /* Tinggi tombol lebih kecil */
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 30px; /* Ukuran ikon panah lebih kecil */
+  }
+
+  .slick-prev {
+    left: -50px; /* Tombol lebih dekat ke sisi kiri */
+  }
+
+  .slick-next {
+    right: -50px; /* Tombol lebih dekat ke sisi kanan */
+  }
+
+  .custom-prev-arrow {
+    left: -60px; /* Tombol lebih dekat ke sisi kiri */
+  }
+
+  .custom-next-arrow {
+    right: -60px; /* Tombol lebih dekat ke sisi kanan */
+  }
+
+  /* Item slider lebih kecil pada layar lebih kecil */
+  .slick-slide .slider-item {
+    transform: scale(0.75); /* Mengecilkan item slider lebih kecil */
+  }
+
+  .slick-slide img {
+    width: 60px; /* Ukuran gambar lebih kecil */
+    height: 60px; /* Ukuran gambar lebih kecil */
+  }
+
+  .slick-slide p {
+    font-size: 10px; /* Ukuran teks lebih kecil */
+  }
 }

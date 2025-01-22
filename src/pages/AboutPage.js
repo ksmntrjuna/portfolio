@@ -5,18 +5,31 @@ import CardSkills from "../components/CardSkills";
 
 function About() {
   return (
-    <section className="text-white py-10 bg-gradient-to-b from-black to-white">
-      <div className="container mx-auto text-center">
-        <h1 className="text-3xl text-white font-bold mb-5">About Me</h1>
-
-        <div className="flex flex-col gap-8 mt-10 lg:flex-row lg:justify-between">
-          {/* Aligning CardProfile and CardSkills side by side on large screens */}
-          <CardProfile />
-          <CardSkills />
+    <section className="py-10 px-4 sm:px-6 lg:px-16">
+      <div className="container mx-auto max-w-7xl text-center">
+        <div>
+          <h1 className="text-4xl font-bold text-black mb-10">About Me</h1>
         </div>
 
-        {/* CardExperience stays below CardProfile and CardSkills */}
-        <div className="mt-10">
+        {/* Grid Layout Responsif */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-center">
+          {/* Card Profile */}
+          <div className="flex justify-center items-center">
+            <div className="w-full max-w-sm">
+              <CardProfile />
+            </div>
+          </div>
+
+          {/* Card Skills */}
+          <div className="flex justify-center items-center">
+            <div className="w-full max-w-sm">
+              <CardSkills />
+            </div>
+          </div>
+        </div>
+
+        {/* Card Experience */}
+        <div className="mt-12 sm:mt-16">
           <CardExperience />
         </div>
       </div>

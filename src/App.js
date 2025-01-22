@@ -4,19 +4,19 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import PortfolioPage from "./pages/PortfolioPage";
+import ProjectPage from "./pages/ProjectPage";
 import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App min-h-screen flex flex-col ">
         <Header />
-        <main className="pt-14">
+        <main className="flex-auto bg-gray-100 pt-14">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/project" element={<ProjectPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
