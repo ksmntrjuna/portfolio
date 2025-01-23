@@ -24,7 +24,7 @@ function CardSkills() {
     { name: "Laravel", image: laravel },
     { name: "JavaScript", image: js },
     { name: "MySQL", image: mysql },
-    { name: "Bootstraps", image: bootstraps },
+    { name: "Bootstrap", image: bootstraps },
     { name: "React", image: react },
     { name: "VSCode", image: vscode },
     { name: "GitHub", image: github },
