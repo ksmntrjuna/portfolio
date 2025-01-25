@@ -10,29 +10,29 @@ function ContactPage() {
         Feel free to reach out via email or phone.
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-center mt-8 space-y-8 sm:space-y-0 sm:space-x-8">
-        {/* Phone Contact */}
-        <div className="flex items-center justify-center sm:justify-start space-x-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 mx-4 sm:mx-8 lg:mx-16">
+        {/* Phone Card */}
+        <div className="bg-gradient-to-l from-gray-400 via-gray-300 to-white shadow-lg rounded-lg p-4 flex items-center space-x-4 transform hover:scale-105 transition-transform duration-300 ease-in-out">
           <img src={phoneIcon} alt="Phone Icon" className="w-10 h-10" />
           <div>
-            <h2 className="text-xl font-semibold">Phone</h2>
+            <h2 className="text-lg font-semibold">Phone</h2>
             <a
               href="tel:+6285157679550"
-              className="text-gray-700 hover:underline"
+              className="text-blue-700 hover:underline text-sm"
             >
               +6285157679550
             </a>
           </div>
         </div>
 
-        {/* Email Contact */}
-        <div className="flex items-center justify-center sm:justify-start space-x-4">
+        {/* Email Card */}
+        <div className="bg-gradient-to-l from-gray-400 via-gray-300 to-white shadow-lg rounded-lg p-4 flex items-center space-x-4 transform hover:scale-105 transition-transform duration-300 ease-in-out">
           <img src={emailIcon} alt="Email Icon" className="w-10 h-10" />
           <div>
-            <h2 className="text-xl font-semibold">Email</h2>
+            <h2 className="text-lg font-semibold">Email</h2>
             <a
               href="mailto:ksmntrjuna@gmail.com"
-              className="text-gray-700 hover:underline"
+              className="text-blue-700 hover:underline text-sm"
             >
               ksmntrjuna@gmail.com
             </a>

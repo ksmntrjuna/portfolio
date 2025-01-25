@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import bgImage from "../assets/images/domain.png";
-import resumeFile from "../assets/resume/Resume_Juna.pdf";
+import resumeFile from "../assets/resume/Resume-Juna.pdf";
 import profileImage from "../assets/images/me1.jpg";
 
 function HomePage() {
@@ -47,7 +47,7 @@ function HomePage() {
                     viewBox="0 0 24 24"
                     strokeWidth="2"
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-6 h-6 text-red-600"
                   >
                     <path
                       strokeLinecap="round"
@@ -55,7 +55,7 @@ function HomePage() {
                       d="M4.5 17.25v1.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25v-1.5M12 3v13.5m0 0l-3.75-3.75M12 16.5l3.75-3.75"
                     />
                   </svg>
-                  <span>Download Resume</span>
+                  <span className="text-red-600">Download Resume</span>
                 </a>
 
                 <a

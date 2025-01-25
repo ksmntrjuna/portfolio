@@ -9,6 +9,10 @@ function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav className="bg-black p-4 text-white fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
@@ -47,6 +51,7 @@ function Header() {
             <li>
               <Link
                 to="/"
+                onClick={closeMobileMenu}
                 className={`px-4 py-2 rounded-md transition-all ${
                   location.pathname === "/"
                     ? "font-extrabold"
@@ -59,6 +64,7 @@ function Header() {
             <li>
               <Link
                 to="/about"
+                onClick={closeMobileMenu}
                 className={`px-4 py-2 rounded-md transition-all ${
                   location.pathname === "/about"
                     ? "font-extrabold"
@@ -71,6 +77,7 @@ function Header() {
             <li>
               <Link
                 to="/project"
+                onClick={closeMobileMenu}
                 className={`px-4 py-2 rounded-md transition-all ${
                   location.pathname === "/project"
                     ? "font-extrabold"
@@ -83,6 +90,7 @@ function Header() {
             <li>
               <Link
                 to="/contact"
+                onClick={closeMobileMenu}
                 className={`px-4 py-2 rounded-md transition-all ${
                   location.pathname === "/contact"
                     ? "font-extrabold"
