@@ -6,48 +6,44 @@ import {
   FaGraduationCap,
 } from "react-icons/fa";
 
-const profileData = [
-  { label: "Name", value: "Juna Kusumantara", icon: <FaUser /> },
-  { label: "Birth", value: "14 June 2003", icon: <FaCalendarAlt /> },
-  { label: "Address", value: "Jakarta, Indonesia", icon: <FaMapMarkerAlt /> },
-  {
-    label: "Education",
-    value: "Diploma Program of Informatic Engineering",
-    icon: <FaGraduationCap />,
-  },
-];
-
-function ProfileRow({ icon, label, value }) {
-  return (
-    <tr>
-      <th className="font-medium w-1/3 pr-2 flex items-center text-sm sm:text-base md:text-lg">
-        <span className="mr-3 text-lg sm:text-xl">{icon}</span>
-        {label}
-      </th>
-      <td className="pl-2 text-sm sm:text-base md:text-lg">: {value}</td>
-    </tr>
-  );
-}
-
 function CardProfile() {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-neutral-900 border border-white shadow-md rounded-lg p-4 sm:p-6 lg:p-8 max-w-xs sm:max-w-md lg:max-w-lg w-full">
-        <h2 className="text-white text-center font-semibold mb-4 text-lg sm:text-xl lg:text-2xl">
+      <div className="w-full max-w-md bg-neutral-900 shadow-md rounded-lg p-6 mx-4 md:mx-auto">
+        <h2 className="text-white text-center font-semibold text-xl mb-6">
           Profile
         </h2>
-        <table
-          className="table-auto w-full text-left text-white"
-          aria-label="Profile Information"
-        >
+        <table className="table-auto w-full text-left text-white">
           <tbody>
-            {profileData.map((row, index) => (
-              <ProfileRow
+            {[
+              { label: "Name", value: "Juna Kusumantara", icon: <FaUser /> },
+              { label: "Age", value: "21", icon: <FaUser /> }, // Ikon dapat diubah jika diperlukan
+              {
+                label: "Birth",
+                value: "14 June 2003",
+                icon: <FaCalendarAlt />,
+              },
+              {
+                label: "Address",
+                value: "Jakarta, Indonesia",
+                icon: <FaMapMarkerAlt />,
+              },
+              {
+                label: "Education",
+                value: "Diploma Program of Informatic Engineering",
+                icon: <FaGraduationCap />,
+              },
+            ].map((row, index) => (
+              <tr
                 key={index}
-                icon={row.icon}
-                label={row.label}
-                value={row.value}
-              />
+                className="border-b border-neutral-700 last:border-none"
+              >
+                <th className="font-medium pr-4 flex items-center">
+                  <span className="mr-3">{row.icon}</span>
+                  {row.label}
+                </th>
+                <td className="pl-2">: {row.value}</td>
+              </tr>
             ))}
           </tbody>
         </table>

@@ -12,7 +12,7 @@ function About() {
         </div>
 
         {/* Grid Layout Responsif */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center px-6">
           {/* Card Profile */}
           <div className="flex justify-center items-center">
             <div className="w-full max-w-sm">
@@ -29,7 +29,7 @@ function About() {
         </div>
 
         {/* Card Experience */}
-        <div className="mt-12 sm:mt-16">
+        <div className="mt-12 sm:mt-16 px-6">
           <CardExperience />
         </div>
       </div>

@@ -6,16 +6,25 @@ import project3 from "../assets/images/dashboard.png";
 import project4 from "../assets/images/coconut.png";
 import project5 from "../assets/images/login.png";
 import project6 from "../assets/images/porto.png";
+import project7 from "../assets/images/landingpage.png";
 
 
 const CardProject = () => {
   const projects = [
     {
+      id: 7,
+      image: project7,
+      title: "Landing Page",
+      description: "Template Landing Page.",
+      tools: "React, Tailwind CSS",
+      link: "https://landing-page-gamma-bice.vercel.app/",
+    },
+    {
       id: 1,
       image: project1,
       title: "IMADIKOM",
       description:
-        "A website for member data collection and organizational activities.",
+        "A website for member data collection and organization activities.",
       tools: "Laravel, PHP, Tailwind CSS",
       link: "https://github.com/ksmntrjuna/laravel-imadikom.git",
     },

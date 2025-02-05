@@ -4,7 +4,7 @@ import emailIcon from "../assets/images/email.png";
 
 function ContactPage() {
   return (
-    <section className="text-center py-10 px-4 sm:px-6 lg:px-16">
+    <section className="text-center py-10 px-4 sm:px-6 lg:px-24">
       <h1 className="text-4xl font-bold">Contact Me</h1>
       <p className="text-gray-600 mt-4">
         Feel free to reach out via email or phone.

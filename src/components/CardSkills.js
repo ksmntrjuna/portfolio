@@ -92,7 +92,7 @@ function CardSkills() {
                 <img
                   src={skill.image}
                   alt={skill.name}
-                  className="mx-auto w-24 h-24 object-contain" // Ensuring all images are the same size
+                  className="mx-auto w-24 h-24 object-contain"
                 />
                 <p className="mt-2 text-gray-700 text-sm font-medium">
                   {skill.name}
