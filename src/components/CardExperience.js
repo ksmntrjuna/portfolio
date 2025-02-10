@@ -4,14 +4,16 @@ import {
   BriefcaseIcon,
   CalendarIcon,
 } from "@heroicons/react/24/outline";
-import icon from "../assets/images/book.gif";
+
+import heptacoLogo from "../assets/images/heptaco.jpg";
+import jsoLogo from "../assets/images/jso.jpg";
 
 function CardExperience() {
-  const renderExperience = (company, location, role, duration) => (
+  const renderExperience = (logo, company, location, role, duration) => (
     <div className="w-full lg:w-1/2 flex flex-col items-center background-white">
       <img
-        src={icon}
-        alt="icon"
+        src={logo}
+        alt={`${company} logo`}
         className="w-20 h-20 object-cover rounded-full mb-2"
       />
       <h5 className="text-black font-semibold mb-2 text-center">{company}</h5>
@@ -38,6 +40,7 @@ function CardExperience() {
 
       <div className="relative flex flex-col lg:flex-row items-center text-black gap-6">
         {renderExperience(
+          heptacoLogo,
           "Heptaco Digital Media",
           "Yogyakarta, Indonesia",
           "Backend Developer Intern",
@@ -45,6 +48,7 @@ function CardExperience() {
         )}
         <div className="hidden lg:block w-1 h-48 bg-black"></div>
         {renderExperience(
+          jsoLogo,
           "PT. Sinergi Membangun Bangsa",
           "Yogyakarta, Indonesia",
           "Staff IT Intern",
