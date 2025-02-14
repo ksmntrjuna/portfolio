@@ -7,10 +7,19 @@ import project4 from "../assets/images/coconut.png";
 import project5 from "../assets/images/login.png";
 import project6 from "../assets/images/porto.png";
 import project7 from "../assets/images/landingpage.png";
+import project8 from "../assets/images/skincare.png";
 
 
 const CardProject = () => {
   const projects = [
+    {
+      id: 8,
+      image: project8,
+      title: "Landing Page",
+      description: "Template Landing Page.",
+      tools: "React, Tailwind CSS",
+      link: "https://landingpage-skincare.vercel.app/",
+    },
     {
       id: 7,
       image: project7,
