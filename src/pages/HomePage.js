@@ -32,7 +32,7 @@ function HomePage() {
             </h1>
             <p className="text-base md:text-lg mb-6 font-semibold text-red-600">
               Hi! I'm Juna Kusumantara, a passionate programmer and UI/UX
-              designer from Jakarta.
+              designer from Yogyakarta.
             </p>
             <div className="flex flex-col items-center lg:items-start space-y-4">
               <div className="flex flex-col sm:flex-row sm:space-x-4">
