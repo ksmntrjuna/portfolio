@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import bgImage from "../assets/images/domain.png";
-import resumeFile from "../assets/resume/Resume-Juna.pdf";
+import resumeFile from "../assets/resume/cv_juna.pdf";
 import profileImage from "../assets/images/me1.jpg";
 
 function HomePage() {
